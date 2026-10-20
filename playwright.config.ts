@@ -38,8 +38,8 @@ export default defineConfig({
       use: { ...devices['Desktop Chrome'], baseURL: 'https://demo.playwright.dev' },
     },
   ],
-  webServer: [
-    { command: 'node server.js', url: 'http://localhost:3000/health', reuseExistingServer: !process.env.CI },
-    { command: 'node shop-server.js', url: 'http://localhost:4000/health', reuseExistingServer: !process.env.CI },
-  ],
+ // webServer: [
+ // { command: 'node server.js', url: 'http://localhost:3000/items', reuseExistingServer: !process.env.CI },
+ // { command: 'node shop-server.js', url: 'http://localhost:4000/health', reuseExistingServer: !process.env.CI },
+//]
 });
